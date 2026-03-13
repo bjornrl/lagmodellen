@@ -1,0 +1,4 @@
+[build]
+  base = "lagmodellen-web/"
+  command = "npm run build"
+  publish = "lagmodellen-web/out"
