@@ -1,5 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'Aeonik';
+  src: url('/Aeonik-light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: url('/Aeonik-regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: url('/Aeonik-medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --color-primary-dark: #0A4259;
@@ -28,8 +51,8 @@
   --color-tertiary-sage: #A8D5BA;
   --color-accent: #E5D7BC;
   --color-text-dark: #182284;
-  --font-heading: 'Playfair Display', serif;
-  --font-body: 'DM Sans', sans-serif;
+  --font-heading: 'Aeonik', sans-serif;
+  --font-body: 'Aeonik', sans-serif;
 }
 
 body {
@@ -40,7 +63,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  color: var(--color-primary-dark);
 }
 
 ::selection {

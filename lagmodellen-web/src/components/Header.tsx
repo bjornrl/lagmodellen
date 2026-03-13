@@ -7,11 +7,11 @@ import SearchBar from './SearchBar';
 import { searchableContent } from '@/lib/content';
 
 const chapters = [
-  { title: 'Introduksjon', slug: '/introduksjon' },
-  { title: 'Hvorfor?', slug: '/hvorfor' },
-  { title: 'Hva er det?', slug: '/hva-er-lagmodellen' },
-  { title: 'Gevinster', slug: '/gevinster-og-barrierer' },
-  { title: 'Kom i gang', slug: '/kom-i-gang' },
+  { title: 'Introduksjon', slug: 'introduksjon' },
+  { title: 'Hvorfor?', slug: 'hvorfor' },
+  { title: 'Hva er det?', slug: 'hva-er-lagmodellen' },
+  { title: 'Gevinster', slug: 'gevinster-og-barrierer' },
+  { title: 'Kom i gang', slug: 'kom-i-gang' },
 ];
 
 export default function Header() {
