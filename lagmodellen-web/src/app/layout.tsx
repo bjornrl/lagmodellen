@@ -6,6 +6,9 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Lagmodellen — Tverrsektorielt samarbeid i praksis",
   description: "Et rammeverk for å prøve ut Lagmodellen i egen virkelighet. Tverrsektorielt samarbeid i offentlig sektor.",
+  icons: {
+    icon: "/assets/Lagmodellen-logo.png",
+  },
 };
 
 export default function RootLayout({
