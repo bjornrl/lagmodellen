@@ -30,9 +30,9 @@ export default function Header() {
             {chapters.map((ch) => (
               <Link
                 key={ch.slug}
-                href={ch.slug}
+                href={`/${ch.slug}`}
                 className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                  pathname === ch.slug
+                  pathname === `/${ch.slug}`
                     ? 'bg-primary-dark text-white'
                     : 'text-primary-dark hover:bg-accent/30'
                 }`}
@@ -75,10 +75,10 @@ export default function Header() {
               {chapters.map((ch) => (
                 <Link
                   key={ch.slug}
-                  href={ch.slug}
+                  href={`/${ch.slug}`}
                   onClick={() => setMobileOpen(false)}
                   className={`px-4 py-3 rounded-xl text-base font-medium transition-colors ${
-                    pathname === ch.slug
+                    pathname === `/${ch.slug}`
                       ? 'bg-primary-dark text-white'
                       : 'text-primary-dark hover:bg-accent/30'
                   }`}
