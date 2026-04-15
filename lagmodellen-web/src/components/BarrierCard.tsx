@@ -50,17 +50,27 @@ export default function BarrierCard({ barrier }: BarrierCardProps) {
             </svg>
           </div>
 
-          <h3 className="font-heading text-lg text-primary-dark flex-1">
-            {barrier.title}
-          </h3>
+          <h3 className="font-heading text-lg text-primary-dark flex-1">{barrier.title}</h3>
 
           <motion.span
             animate={{ rotate: isExpanded ? 180 : 0 }}
             transition={{ duration: 0.3 }}
             className="flex-shrink-0 text-primary-dark/50"
           >
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 7.5L10 12.5L15 7.5"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
             </svg>
           </motion.span>
         </div>
@@ -95,9 +105,7 @@ export default function BarrierCard({ barrier }: BarrierCardProps) {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-heading text-sm text-secondary-red mb-1">
-                      Barriere
-                    </h4>
+                    <h4 className="font-heading text-sm text-secondary-red mb-1">Barriere</h4>
                     <p className="font-body text-sm text-text-dark/80 leading-relaxed">
                       {barrier.description}
                     </p>
@@ -124,9 +132,7 @@ export default function BarrierCard({ barrier }: BarrierCardProps) {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-heading text-sm text-secondary-green mb-1">
-                      Losning
-                    </h4>
+                    <h4 className="font-heading text-sm text-secondary-green mb-1">Losning</h4>
                     <p className="font-body text-sm text-text-dark/80 leading-relaxed">
                       {barrier.solution}
                     </p>

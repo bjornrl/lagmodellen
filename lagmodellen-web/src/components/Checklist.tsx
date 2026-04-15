@@ -100,9 +100,7 @@ export default function Checklist({ items, storageKey }: ChecklistProps) {
               </div>
               <span
                 className={`font-body text-sm md:text-base leading-relaxed transition-colors ${
-                  checked[index]
-                    ? 'text-text-dark/40 line-through'
-                    : 'text-text-dark'
+                  checked[index] ? 'text-text-dark/40 line-through' : 'text-text-dark'
                 }`}
               >
                 {item}

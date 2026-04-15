@@ -18,7 +18,7 @@ interface StepCardProps {
   isLast?: boolean;
 }
 
-const toArray = (v: string | string[]): string[] => Array.isArray(v) ? v : [v];
+const toArray = (v: string | string[]): string[] => (Array.isArray(v) ? v : [v]);
 
 export default function StepCard({ step, isLast = false }: StepCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -38,9 +38,7 @@ export default function StepCard({ step, isLast = false }: StepCardProps) {
         >
           {step.number}
         </button>
-        {!isLast && (
-          <div className="w-0.5 flex-1 bg-accent/50 min-h-[24px]" />
-        )}
+        {!isLast && <div className="w-0.5 flex-1 bg-accent/50 min-h-[24px]" />}
       </div>
 
       {/* Card content */}
@@ -54,20 +52,28 @@ export default function StepCard({ step, isLast = false }: StepCardProps) {
             {/* Header */}
             <div className="flex items-start justify-between gap-3">
               <div>
-                <h3 className="font-heading text-lg md:text-xl text-primary-dark">
-                  {step.title}
-                </h3>
-                <p className="font-body text-sm md:text-base text-text-dark/70 mt-1">
-                  {step.goal}
-                </p>
+                <h3 className="font-heading text-lg md:text-xl text-primary-dark">{step.title}</h3>
+                <p className="font-body text-sm md:text-base text-text-dark/70 mt-1">{step.goal}</p>
               </div>
               <motion.span
                 animate={{ rotate: isExpanded ? 180 : 0 }}
                 transition={{ duration: 0.3 }}
                 className="flex-shrink-0 text-primary-dark/50"
               >
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 7.5L10 12.5L15 7.5"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
               </motion.span>
             </div>
@@ -93,9 +99,7 @@ export default function StepCard({ step, isLast = false }: StepCardProps) {
                           {actions.map((action, i) => (
                             <li key={i} className="flex items-start gap-2">
                               <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-secondary-green mt-2" />
-                              <span className="font-body text-sm text-text-dark/80">
-                                {action}
-                              </span>
+                              <span className="font-body text-sm text-text-dark/80">{action}</span>
                             </li>
                           ))}
                         </ul>
@@ -112,9 +116,7 @@ export default function StepCard({ step, isLast = false }: StepCardProps) {
                           {clarifications.map((item, i) => (
                             <li key={i} className="flex items-start gap-2">
                               <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-secondary-purple mt-2" />
-                              <span className="font-body text-sm text-text-dark/80">
-                                {item}
-                              </span>
+                              <span className="font-body text-sm text-text-dark/80">{item}</span>
                             </li>
                           ))}
                         </ul>
@@ -131,9 +133,7 @@ export default function StepCard({ step, isLast = false }: StepCardProps) {
                           {pitfalls.map((item, i) => (
                             <li key={i} className="flex items-start gap-2">
                               <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-secondary-red mt-2" />
-                              <span className="font-body text-sm text-text-dark/80">
-                                {item}
-                              </span>
+                              <span className="font-body text-sm text-text-dark/80">{item}</span>
                             </li>
                           ))}
                         </ul>
@@ -150,9 +150,7 @@ export default function StepCard({ step, isLast = false }: StepCardProps) {
                           {citizenNotices.map((item, i) => (
                             <li key={i} className="flex items-start gap-2">
                               <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-tertiary-mint mt-2" />
-                              <span className="font-body text-sm text-text-dark/80">
-                                {item}
-                              </span>
+                              <span className="font-body text-sm text-text-dark/80">{item}</span>
                             </li>
                           ))}
                         </ul>

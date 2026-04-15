@@ -59,9 +59,7 @@ export default function PrincipleCard({ principle }: PrincipleCardProps) {
             />
           </div>
           <div className="flex-1 min-w-0">
-            <h3 className="font-heading text-lg md:text-xl text-primary-dark">
-              {principle.title}
-            </h3>
+            <h3 className="font-heading text-lg md:text-xl text-primary-dark">{principle.title}</h3>
             <p className="font-body text-sm md:text-base text-text-dark/70 mt-1">
               {principle.short}
             </p>
@@ -71,8 +69,20 @@ export default function PrincipleCard({ principle }: PrincipleCardProps) {
             transition={{ duration: 0.3 }}
             className="flex-shrink-0 text-primary-dark/50 text-xl"
           >
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 7.5L10 12.5L15 7.5"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
             </svg>
           </motion.span>
         </div>
@@ -90,9 +100,7 @@ export default function PrincipleCard({ principle }: PrincipleCardProps) {
               <div className="mt-6 space-y-5 border-t border-accent/20 pt-5">
                 {/* Description */}
                 <div>
-                  <h4 className="font-heading text-base text-primary-dark mb-1">
-                    Beskrivelse
-                  </h4>
+                  <h4 className="font-heading text-base text-primary-dark mb-1">Beskrivelse</h4>
                   <p className="font-body text-sm text-text-dark/80 leading-relaxed">
                     {principle.description}
                   </p>
@@ -100,9 +108,7 @@ export default function PrincipleCard({ principle }: PrincipleCardProps) {
 
                 {/* Why */}
                 <div>
-                  <h4 className="font-heading text-base text-primary-dark mb-1">
-                    Hvorfor?
-                  </h4>
+                  <h4 className="font-heading text-base text-primary-dark mb-1">Hvorfor?</h4>
                   <p className="font-body text-sm text-text-dark/80 leading-relaxed">
                     {principle.why}
                   </p>
@@ -110,9 +116,7 @@ export default function PrincipleCard({ principle }: PrincipleCardProps) {
 
                 {/* Mob experience */}
                 <div>
-                  <h4 className="font-heading text-base text-primary-dark mb-1">
-                    Mob-erfaring
-                  </h4>
+                  <h4 className="font-heading text-base text-primary-dark mb-1">Mob-erfaring</h4>
                   <p className="font-body text-sm text-text-dark/80 leading-relaxed">
                     {principle.mobExperience}
                   </p>
@@ -121,18 +125,14 @@ export default function PrincipleCard({ principle }: PrincipleCardProps) {
                 {/* Reflection questions */}
                 {principle.reflection.length > 0 && (
                   <div>
-                    <h4 className="font-heading text-base text-primary-dark mb-2">
-                      Refleksjon
-                    </h4>
+                    <h4 className="font-heading text-base text-primary-dark mb-2">Refleksjon</h4>
                     <ul className="space-y-2">
                       {principle.reflection.map((q, i) => (
                         <li key={i} className="flex items-start gap-2">
                           <span className="flex-shrink-0 w-5 h-5 rounded-full border border-accent flex items-center justify-center text-xs text-accent mt-0.5">
                             ?
                           </span>
-                          <span className="font-body text-sm text-text-dark/80">
-                            {q}
-                          </span>
+                          <span className="font-body text-sm text-text-dark/80">{q}</span>
                         </li>
                       ))}
                     </ul>

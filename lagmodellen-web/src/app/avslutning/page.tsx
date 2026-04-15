@@ -16,7 +16,11 @@ export default function AvslutningPage() {
     <div>
       {/* Hero */}
       <section className="bg-accent text-primary-dark py-20 md:py-28 relative overflow-hidden">
-        <img src="/assets/form-3.svg" alt="" className="absolute bottom-0 right-0 w-80 opacity-15 pointer-events-none" />
+        <img
+          src="/assets/form-3.svg"
+          alt=""
+          className="absolute bottom-0 right-0 w-80 opacity-15 pointer-events-none"
+        />
         <div className="max-w-4xl mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -38,10 +42,30 @@ export default function AvslutningPage() {
             <h2 className="font-heading text-3xl text-primary-dark mb-8">Oppsummering av reisen</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {[
-                { chapter: 'Kapittel 1', title: 'Hvorfor Lagmodellen?', text: 'Vi har sett på utfordringene i offentlig sektor som gjør det vanskelig å gi helhetlig støtte.', link: '/hvorfor' },
-                { chapter: 'Kapittel 2', title: 'Hva er Lagmodellen?', text: 'Vi har blitt kjent med organisering, prinsipper og erfaringer fra praksis.', link: '/hva-er-lagmodellen' },
-                { chapter: 'Kapittel 3', title: 'Gevinster og barrierer', text: 'Vi har vurdert hva vi kan vinne og hva vi må være forberedt på.', link: '/gevinster-og-barrierer' },
-                { chapter: 'Kapittel 4', title: 'Hvordan komme i gang', text: 'Vi har fått 12 konkrete steg for å starte i liten skala.', link: '/kom-i-gang' },
+                {
+                  chapter: 'Kapittel 1',
+                  title: 'Hvorfor Lagmodellen?',
+                  text: 'Vi har sett på utfordringene i offentlig sektor som gjør det vanskelig å gi helhetlig støtte.',
+                  link: '/hvorfor',
+                },
+                {
+                  chapter: 'Kapittel 2',
+                  title: 'Hva er Lagmodellen?',
+                  text: 'Vi har blitt kjent med organisering, prinsipper og erfaringer fra praksis.',
+                  link: '/hva-er-lagmodellen',
+                },
+                {
+                  chapter: 'Kapittel 3',
+                  title: 'Gevinster og barrierer',
+                  text: 'Vi har vurdert hva vi kan vinne og hva vi må være forberedt på.',
+                  link: '/gevinster-og-barrierer',
+                },
+                {
+                  chapter: 'Kapittel 4',
+                  title: 'Hvordan komme i gang',
+                  text: 'Vi har fått 12 konkrete steg for å starte i liten skala.',
+                  link: '/kom-i-gang',
+                },
               ].map((item, i) => (
                 <Link
                   key={i}
@@ -62,7 +86,9 @@ export default function AvslutningPage() {
       <section className="bg-white py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-4">
           <ScrollReveal>
-            <h2 className="font-heading text-3xl text-primary-dark mb-4 text-center">Forpliktelsesformel</h2>
+            <h2 className="font-heading text-3xl text-primary-dark mb-4 text-center">
+              Forpliktelsesformel
+            </h2>
             <p className="text-text-dark/60 text-center mb-8">
               Fyll inn og ta med dere en konkret forpliktelse videre.
             </p>
@@ -75,12 +101,16 @@ export default function AvslutningPage() {
       <section className="bg-tertiary-sage/20 py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4">
           <ScrollReveal>
-            <h2 className="font-heading text-3xl text-primary-dark mb-8 text-center">Kontakt oss</h2>
+            <h2 className="font-heading text-3xl text-primary-dark mb-8 text-center">
+              Kontakt oss
+            </h2>
             <div className="grid md:grid-cols-3 gap-6">
               {contacts.map((contact, i) => (
                 <div key={i} className="bg-white rounded-2xl p-6 shadow-sm text-center">
                   <div className="w-16 h-16 rounded-full bg-primary-dark/10 flex items-center justify-center mx-auto mb-4">
-                    <span className="font-heading text-2xl text-primary-dark">{contact.name[0]}</span>
+                    <span className="font-heading text-2xl text-primary-dark">
+                      {contact.name[0]}
+                    </span>
                   </div>
                   <h3 className="font-medium text-primary-dark mb-2">{contact.name}</h3>
                   <a
@@ -101,7 +131,8 @@ export default function AvslutningPage() {
         <div className="max-w-3xl mx-auto px-4 text-center">
           <ScrollReveal>
             <p className="text-text-dark/60 text-lg leading-relaxed">
-              Lagmodellen ble utviklet i prosjektet Mann om bord med støtte fra Stimulab (Digdir + DOGA). Spredningsmateriell utviklet med Comte Bureau.
+              Lagmodellen ble utviklet i prosjektet Mann om bord med støtte fra Stimulab (Digdir +
+              DOGA). Spredningsmateriell utviklet med Comte Bureau.
             </p>
           </ScrollReveal>
         </div>

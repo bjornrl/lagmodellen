@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @font-face {
   font-family: 'Aeonik';
@@ -25,31 +25,31 @@
 }
 
 :root {
-  --color-primary-dark: #0A4259;
-  --color-primary-light: #FAF3E5;
-  --color-secondary-red: #F36C57;
-  --color-secondary-purple: #8B7BC6;
-  --color-secondary-green: #0E8A6B;
-  --color-tertiary-pink: #F4AFAF;
-  --color-tertiary-lavender: #C4BBE0;
-  --color-tertiary-mint: #7FC3CD;
-  --color-tertiary-sage: #A8D5BA;
-  --color-accent: #E5D7BC;
-  --color-white: #FFFFFF;
+  --color-primary-dark: #0a4259;
+  --color-primary-light: #faf3e5;
+  --color-secondary-red: #f36c57;
+  --color-secondary-purple: #8b7bc6;
+  --color-secondary-green: #0e8a6b;
+  --color-tertiary-pink: #f4afaf;
+  --color-tertiary-lavender: #c4bbe0;
+  --color-tertiary-mint: #7fc3cd;
+  --color-tertiary-sage: #a8d5ba;
+  --color-accent: #e5d7bc;
+  --color-white: #ffffff;
   --color-text-dark: #182284;
 }
 
 @theme inline {
-  --color-primary-dark: #0A4259;
-  --color-primary-light: #FAF3E5;
-  --color-secondary-red: #F36C57;
-  --color-secondary-purple: #8B7BC6;
-  --color-secondary-green: #0E8A6B;
-  --color-tertiary-pink: #F4AFAF;
-  --color-tertiary-lavender: #C4BBE0;
-  --color-tertiary-mint: #7FC3CD;
-  --color-tertiary-sage: #A8D5BA;
-  --color-accent: #E5D7BC;
+  --color-primary-dark: #0a4259;
+  --color-primary-light: #faf3e5;
+  --color-secondary-red: #f36c57;
+  --color-secondary-purple: #8b7bc6;
+  --color-secondary-green: #0e8a6b;
+  --color-tertiary-pink: #f4afaf;
+  --color-tertiary-lavender: #c4bbe0;
+  --color-tertiary-mint: #7fc3cd;
+  --color-tertiary-sage: #a8d5ba;
+  --color-accent: #e5d7bc;
   --color-text-dark: #182284;
   --font-heading: 'Aeonik', sans-serif;
   --font-body: 'Aeonik', sans-serif;
@@ -61,7 +61,12 @@ body {
   font-family: var(--font-body);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
 }
 

@@ -45,18 +45,14 @@ export default function ReflectionCard({
 
   return (
     <div className="rounded-2xl bg-white shadow-sm border-l-4 border-accent p-6 md:p-8">
-      <h3 className="font-heading text-xl md:text-2xl text-primary-dark mb-6">
-        {title}
-      </h3>
+      <h3 className="font-heading text-xl md:text-2xl text-primary-dark mb-6">{title}</h3>
 
       <ul className="space-y-4">
         {questions.map((question, index) => (
           <li key={index}>
             <button
               type="button"
-              onClick={() =>
-                setExpandedIndex(expandedIndex === index ? null : index)
-              }
+              onClick={() => setExpandedIndex(expandedIndex === index ? null : index)}
               className="flex items-start gap-3 w-full text-left group"
             >
               <span className="flex-shrink-0 w-8 h-8 rounded-full border-2 border-accent flex items-center justify-center text-sm font-bold text-accent mt-0.5 group-hover:bg-accent group-hover:text-white transition-colors">

@@ -51,18 +51,12 @@ export default function ChapterCard({ chapter, index }: ChapterCardProps) {
         className={`rounded-2xl bg-white shadow-sm hover:shadow-md border-t-4 ${borderColor} p-6 h-full flex flex-col transition-shadow`}
       >
         {/* Chapter number */}
-        <div
-          className={`w-8 h-8 rounded-full ${bgColor} flex items-center justify-center mb-4`}
-        >
-          <span className="font-heading text-sm font-bold text-white">
-            {index + 1}
-          </span>
+        <div className={`w-8 h-8 rounded-full ${bgColor} flex items-center justify-center mb-4`}>
+          <span className="font-heading text-sm font-bold text-white">{index + 1}</span>
         </div>
 
         {/* Title */}
-        <h3 className="font-heading text-lg md:text-xl text-primary-dark mb-2">
-          {chapter.title}
-        </h3>
+        <h3 className="font-heading text-lg md:text-xl text-primary-dark mb-2">{chapter.title}</h3>
 
         {/* Description */}
         <p className="font-body text-sm text-text-dark/70 leading-relaxed flex-1">

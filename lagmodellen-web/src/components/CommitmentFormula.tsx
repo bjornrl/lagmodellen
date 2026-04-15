@@ -25,7 +25,8 @@ export default function CommitmentFormula() {
   }, []);
 
   const buildText = useCallback(() => {
-    const v = (key: string) => values[key]?.trim() || `[${fields.find((f) => f.key === key)?.label}]`;
+    const v = (key: string) =>
+      values[key]?.trim() || `[${fields.find((f) => f.key === key)?.label}]`;
     return `Vi vil prove ${v('tiltak')} for ${v('malgruppe')} for a ${v('effekt')}, innen ${v('tidspunkt')}, og vi vet at vi er pa rett vei nar ${v('signal')}.`;
   }, [values]);
 

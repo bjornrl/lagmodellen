@@ -7,10 +7,23 @@ import MannOmBordSection from '@/components/MannOmBordSection';
 import { mannOmBordCase } from '@/lib/content';
 
 const systemChallenges = [
-  { title: 'Fragmentering og parallelle løp', description: 'Innbyggere møter mange aktører og må koordinere hjelpen selv.' },
-  { title: 'Standardiserte tjenester', description: 'Løsninger laget for «gjennomsnittsbrukeren», treffer dårlig for de som faller utenfor.' },
-  { title: 'Koordinering fremfor oppfølging', description: 'Ansatte bruker tid på å få systemet til å henge sammen.' },
-  { title: 'Manglende brobygging', description: 'Ulike fagkulturer, styringsnivåer og regelverk skaper barrierer.' },
+  {
+    title: 'Fragmentering og parallelle løp',
+    description: 'Innbyggere møter mange aktører og må koordinere hjelpen selv.',
+  },
+  {
+    title: 'Standardiserte tjenester',
+    description:
+      'Løsninger laget for «gjennomsnittsbrukeren», treffer dårlig for de som faller utenfor.',
+  },
+  {
+    title: 'Koordinering fremfor oppfølging',
+    description: 'Ansatte bruker tid på å få systemet til å henge sammen.',
+  },
+  {
+    title: 'Manglende brobygging',
+    description: 'Ulike fagkulturer, styringsnivåer og regelverk skaper barrierer.',
+  },
 ];
 
 const humanConsequences = [
@@ -22,7 +35,11 @@ const humanConsequences = [
 ];
 
 const changeReactions = [
-  { level: 'Mikro', scope: 'individ', description: 'Nysgjerrighet blandet med usikkerhet om egen rolle.' },
+  {
+    level: 'Mikro',
+    scope: 'individ',
+    description: 'Nysgjerrighet blandet med usikkerhet om egen rolle.',
+  },
   { level: 'Meso', scope: 'virksomhet', description: 'Kulturforskjeller mellom avdelinger.' },
   { level: 'Makro', scope: 'samarbeid på tvers', description: 'Ulike tempo og styringslogikker.' },
 ];
@@ -32,7 +49,11 @@ export default function HvorforPage() {
     <div>
       {/* Hero */}
       <section className="bg-secondary-red text-white py-20 md:py-28 relative overflow-hidden">
-        <img src="/assets/form-2.svg" alt="" className="absolute bottom-0 right-0 w-96 opacity-10 pointer-events-none" />
+        <img
+          src="/assets/form-2.svg"
+          alt=""
+          className="absolute bottom-0 right-0 w-96 opacity-10 pointer-events-none"
+        />
         <div className="max-w-4xl mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -40,9 +61,12 @@ export default function HvorforPage() {
             transition={{ duration: 0.6 }}
           >
             <p className="text-white/70 font-medium mb-2">Kapittel 1</p>
-            <h1 className="font-heading text-4xl md:text-5xl text-white mb-6">Hvorfor Lagmodellen?</h1>
+            <h1 className="font-heading text-4xl md:text-5xl text-white mb-6">
+              Hvorfor Lagmodellen?
+            </h1>
             <p className="text-xl text-white/80 max-w-2xl">
-              Før vi kan forstå modellen, må vi forstå problembildet den forsøker å svare på. Målet er å løfte frem mønstre som gjør det vanskelig å gi innbyggere helhetlig støtte.
+              Før vi kan forstå modellen, må vi forstå problembildet den forsøker å svare på. Målet
+              er å løfte frem mønstre som gjør det vanskelig å gi innbyggere helhetlig støtte.
             </p>
           </motion.div>
         </div>
@@ -52,10 +76,15 @@ export default function HvorforPage() {
       <section className="bg-primary-light py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4">
           <ScrollReveal>
-            <h2 className="font-heading text-3xl text-primary-dark mb-10">Systemutfordringer i offentlig sektor</h2>
+            <h2 className="font-heading text-3xl text-primary-dark mb-10">
+              Systemutfordringer i offentlig sektor
+            </h2>
             <div className="grid md:grid-cols-2 gap-6">
               {systemChallenges.map((challenge, i) => (
-                <div key={i} className="bg-white rounded-2xl p-6 shadow-sm border-l-4 border-secondary-red">
+                <div
+                  key={i}
+                  className="bg-white rounded-2xl p-6 shadow-sm border-l-4 border-secondary-red"
+                >
                   <h3 className="font-heading text-xl text-primary-dark mb-3">{challenge.title}</h3>
                   <p className="text-text-dark/70">{challenge.description}</p>
                 </div>
@@ -69,7 +98,9 @@ export default function HvorforPage() {
       <section className="bg-tertiary-pink/30 py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4">
           <ScrollReveal>
-            <h2 className="font-heading text-3xl text-primary-dark mb-10">Menneskelige konsekvenser</h2>
+            <h2 className="font-heading text-3xl text-primary-dark mb-10">
+              Menneskelige konsekvenser
+            </h2>
             <div className="space-y-4">
               {humanConsequences.map((item, i) => (
                 <div key={i} className="flex items-start gap-4 bg-white rounded-xl p-5 shadow-sm">
@@ -108,7 +139,9 @@ export default function HvorforPage() {
       <section className="bg-tertiary-sage/20 py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4">
           <ScrollReveal>
-            <h2 className="font-heading text-3xl text-primary-dark mb-8">Fra utfordring til mulighet</h2>
+            <h2 className="font-heading text-3xl text-primary-dark mb-8">
+              Fra utfordring til mulighet
+            </h2>
             <div className="space-y-4">
               {[
                 'Gjøre friksjon synlig.',
@@ -118,7 +151,13 @@ export default function HvorforPage() {
                 <div key={i} className="flex items-center gap-4 bg-white rounded-xl p-5 shadow-sm">
                   <span className="w-8 h-8 rounded-full bg-secondary-green/10 flex items-center justify-center shrink-0">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                      <path d="M2 8l4 4 8-8" stroke="#0E8A6B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path
+                        d="M2 8l4 4 8-8"
+                        stroke="#0E8A6B"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
                     </svg>
                   </span>
                   <p className="text-text-dark/80">{item}</p>
@@ -170,16 +209,18 @@ export default function HvorforPage() {
       <section className="bg-tertiary-lavender/20 py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4">
           <ScrollReveal>
-            <MannOmBordSection data={{
-              background: mannOmBordCase.background,
-              approach: [mannOmBordCase.approach],
-              results: [
-                { category: 'Innbyggere', items: [mannOmBordCase.results.innbyggere] },
-                { category: 'Ansatte', items: [mannOmBordCase.results.ansatte] },
-                { category: 'Organisasjoner', items: [mannOmBordCase.results.organisasjoner] },
-              ],
-              patterns: [mannOmBordCase.patterns],
-            }} />
+            <MannOmBordSection
+              data={{
+                background: mannOmBordCase.background,
+                approach: [mannOmBordCase.approach],
+                results: [
+                  { category: 'Innbyggere', items: [mannOmBordCase.results.innbyggere] },
+                  { category: 'Ansatte', items: [mannOmBordCase.results.ansatte] },
+                  { category: 'Organisasjoner', items: [mannOmBordCase.results.organisasjoner] },
+                ],
+                patterns: [mannOmBordCase.patterns],
+              }}
+            />
           </ScrollReveal>
         </div>
       </section>

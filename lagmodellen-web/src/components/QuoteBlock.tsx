@@ -19,9 +19,7 @@ export default function QuoteBlock({ text, author }: QuoteBlockProps) {
       <p className="font-heading text-xl md:text-2xl lg:text-3xl italic text-primary-dark leading-relaxed">
         &ldquo;{text}&rdquo;
       </p>
-      <footer className="mt-4 font-body text-base text-primary-dark/70">
-        &mdash; {author}
-      </footer>
+      <footer className="mt-4 font-body text-base text-primary-dark/70">&mdash; {author}</footer>
     </motion.blockquote>
   );
 }

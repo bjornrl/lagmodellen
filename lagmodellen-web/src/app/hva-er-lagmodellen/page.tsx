@@ -18,7 +18,8 @@ const teamVariants = [
   },
   {
     title: 'Partner-/samfunnstyngde',
-    description: 'Andre aktører er nøkkel (kriminalomsorg, idrett, næringsliv), offentlige støtter med fag.',
+    description:
+      'Andre aktører er nøkkel (kriminalomsorg, idrett, næringsliv), offentlige støtter med fag.',
     color: 'bg-secondary-green',
   },
 ];
@@ -28,7 +29,11 @@ export default function HvaErLagmodellenPage() {
     <div>
       {/* Hero */}
       <section className="bg-secondary-purple text-white py-20 md:py-28 relative overflow-hidden">
-        <img src="/assets/form-3.svg" alt="" className="absolute top-0 left-0 w-80 opacity-10 pointer-events-none" />
+        <img
+          src="/assets/form-3.svg"
+          alt=""
+          className="absolute top-0 left-0 w-80 opacity-10 pointer-events-none"
+        />
         <div className="max-w-4xl mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -36,7 +41,9 @@ export default function HvaErLagmodellenPage() {
             transition={{ duration: 0.6 }}
           >
             <p className="text-white/70 font-medium mb-2">Kapittel 2</p>
-            <h1 className="font-heading text-4xl md:text-5xl text-white mb-6">Hva er Lagmodellen?</h1>
+            <h1 className="font-heading text-4xl md:text-5xl text-white mb-6">
+              Hva er Lagmodellen?
+            </h1>
             <p className="text-xl text-white/80 max-w-2xl">
               Organisering, prinsipper, og eksempler fra praksis.
             </p>
@@ -48,10 +55,14 @@ export default function HvaErLagmodellenPage() {
       <section className="bg-primary-light py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4">
           <ScrollReveal>
-            <h2 className="font-heading text-3xl text-primary-dark mb-8">Organisering: Ett lag rundt innbygger</h2>
+            <h2 className="font-heading text-3xl text-primary-dark mb-8">
+              Organisering: Ett lag rundt innbygger
+            </h2>
             <div className="bg-white rounded-2xl p-8 shadow-sm mb-8">
               <p className="text-lg text-text-dark/80 leading-relaxed mb-6">
-                Kjernen i Lagmodellen er å organisere seg som ett lag rundt én innbygger eller familie. Alle aktører er likeverdige i mål, stemme og ansvar — men bidrar ulikt etter kompetanse.
+                Kjernen i Lagmodellen er å organisere seg som ett lag rundt én innbygger eller
+                familie. Alle aktører er likeverdige i mål, stemme og ansvar — men bidrar ulikt
+                etter kompetanse.
               </p>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-primary-light rounded-xl p-5">
@@ -68,11 +79,13 @@ export default function HvaErLagmodellenPage() {
             <div className="bg-white rounded-2xl p-8 shadow-sm mb-8">
               <h3 className="font-heading text-2xl text-primary-dark mb-6">Rammer</h3>
               <div className="grid md:grid-cols-3 gap-4">
-                {['Én enkel inngang', 'Én felles plan', 'Beslutninger nær innbygger'].map((item, i) => (
-                  <div key={i} className="bg-accent/20 rounded-xl p-4 text-center">
-                    <p className="text-primary-dark font-medium">{item}</p>
-                  </div>
-                ))}
+                {['Én enkel inngang', 'Én felles plan', 'Beslutninger nær innbygger'].map(
+                  (item, i) => (
+                    <div key={i} className="bg-accent/20 rounded-xl p-4 text-center">
+                      <p className="text-primary-dark font-medium">{item}</p>
+                    </div>
+                  ),
+                )}
               </div>
             </div>
 
@@ -104,7 +117,9 @@ export default function HvaErLagmodellenPage() {
       <section className="bg-white py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4">
           <ScrollReveal>
-            <h2 className="font-heading text-3xl text-primary-dark mb-10">Tre varianter av lagtyngde</h2>
+            <h2 className="font-heading text-3xl text-primary-dark mb-10">
+              Tre varianter av lagtyngde
+            </h2>
             <div className="grid md:grid-cols-3 gap-6">
               {teamVariants.map((variant, i) => (
                 <div key={i} className="rounded-2xl overflow-hidden shadow-sm">
@@ -125,9 +140,12 @@ export default function HvaErLagmodellenPage() {
       <section className="bg-tertiary-lavender/20 py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-4">
           <ScrollReveal>
-            <h2 className="font-heading text-3xl text-primary-dark mb-4 text-center">De seks prinsippene</h2>
+            <h2 className="font-heading text-3xl text-primary-dark mb-4 text-center">
+              De seks prinsippene
+            </h2>
             <p className="text-text-dark/60 text-center mb-12 max-w-2xl mx-auto">
-              Klikk på et prinsipp for å utforske beskrivelse, erfaringer fra praksis, og refleksjonsspørsmål.
+              Klikk på et prinsipp for å utforske beskrivelse, erfaringer fra praksis, og
+              refleksjonsspørsmål.
             </p>
           </ScrollReveal>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -1,13 +1,14 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import type { Metadata } from 'next';
+import './globals.css';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: "Lagmodellen — Tverrsektorielt samarbeid i praksis",
-  description: "Et rammeverk for å prøve ut Lagmodellen i egen virkelighet. Tverrsektorielt samarbeid i offentlig sektor.",
+  title: 'Lagmodellen — Tverrsektorielt samarbeid i praksis',
+  description:
+    'Et rammeverk for å prøve ut Lagmodellen i egen virkelighet. Tverrsektorielt samarbeid i offentlig sektor.',
   icons: {
-    icon: "/assets/Lagmodellen-logo.png",
+    icon: '/assets/Lagmodellen-logo.png',
   },
 };
 
@@ -19,11 +20,9 @@ export default function RootLayout({
   return (
     <html lang="no">
       <body className="font-body antialiased bg-primary-light text-text-dark">
-        <Header />
-        <main className="min-h-screen">
-          {children}
-        </main>
-        <Footer />
+        {/* <Header /> */}
+        <main className="min-h-screen">{children}</main>
+        {/* <Footer /> */}
       </body>
     </html>
   );

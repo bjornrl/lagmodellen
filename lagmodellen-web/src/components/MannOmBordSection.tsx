@@ -20,11 +20,7 @@ interface MannOmBordSectionProps {
 export default function MannOmBordSection({ data }: MannOmBordSectionProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const resultColors = [
-    'bg-secondary-green',
-    'bg-secondary-purple',
-    'bg-tertiary-mint',
-  ];
+  const resultColors = ['bg-secondary-green', 'bg-secondary-purple', 'bg-tertiary-mint'];
 
   return (
     <div className="rounded-2xl bg-white shadow-sm border border-accent/20 overflow-hidden">
@@ -38,17 +34,27 @@ export default function MannOmBordSection({ data }: MannOmBordSectionProps) {
           <span className="inline-block font-body text-xs font-medium uppercase tracking-wider text-secondary-purple mb-1">
             Praksis-case
           </span>
-          <h3 className="font-heading text-xl md:text-2xl text-primary-dark">
-            Mann om bord
-          </h3>
+          <h3 className="font-heading text-xl md:text-2xl text-primary-dark">Mann om bord</h3>
         </div>
         <motion.span
           animate={{ rotate: isExpanded ? 180 : 0 }}
           transition={{ duration: 0.3 }}
           className="flex-shrink-0 text-primary-dark/50"
         >
-          <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5 7.5L10 12.5L15 7.5"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </svg>
         </motion.span>
       </button>
@@ -66,9 +72,7 @@ export default function MannOmBordSection({ data }: MannOmBordSectionProps) {
             <div className="px-6 md:px-8 pb-6 md:pb-8 space-y-8 border-t border-accent/20 pt-6">
               {/* Background */}
               <div>
-                <h4 className="font-heading text-lg text-primary-dark mb-2">
-                  Bakgrunn
-                </h4>
+                <h4 className="font-heading text-lg text-primary-dark mb-2">Bakgrunn</h4>
                 <p className="font-body text-sm md:text-base text-text-dark/80 leading-relaxed">
                   {data.background}
                 </p>
@@ -76,9 +80,7 @@ export default function MannOmBordSection({ data }: MannOmBordSectionProps) {
 
               {/* Approach */}
               <div>
-                <h4 className="font-heading text-lg text-primary-dark mb-3">
-                  Tilnerming
-                </h4>
+                <h4 className="font-heading text-lg text-primary-dark mb-3">Tilnerming</h4>
                 <ul className="space-y-2">
                   {data.approach.map((item, i) => (
                     <li key={i} className="flex items-start gap-2">
@@ -95,32 +97,18 @@ export default function MannOmBordSection({ data }: MannOmBordSectionProps) {
 
               {/* Results */}
               <div>
-                <h4 className="font-heading text-lg text-primary-dark mb-3">
-                  Resultater
-                </h4>
+                <h4 className="font-heading text-lg text-primary-dark mb-3">Resultater</h4>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {data.results.map((result, i) => (
-                    <div
-                      key={i}
-                      className="rounded-xl overflow-hidden border border-accent/20"
-                    >
-                      <div
-                        className={`${resultColors[i % resultColors.length]} px-4 py-2`}
-                      >
-                        <h5 className="font-heading text-sm text-white">
-                          {result.category}
-                        </h5>
+                    <div key={i} className="rounded-xl overflow-hidden border border-accent/20">
+                      <div className={`${resultColors[i % resultColors.length]} px-4 py-2`}>
+                        <h5 className="font-heading text-sm text-white">{result.category}</h5>
                       </div>
                       <ul className="p-4 space-y-1.5">
                         {result.items.map((item, j) => (
-                          <li
-                            key={j}
-                            className="flex items-start gap-2"
-                          >
+                          <li key={j} className="flex items-start gap-2">
                             <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-accent mt-2" />
-                            <span className="font-body text-xs text-text-dark/80">
-                              {item}
-                            </span>
+                            <span className="font-body text-xs text-text-dark/80">{item}</span>
                           </li>
                         ))}
                       </ul>
@@ -132,9 +120,7 @@ export default function MannOmBordSection({ data }: MannOmBordSectionProps) {
               {/* Patterns */}
               {data.patterns.length > 0 && (
                 <div>
-                  <h4 className="font-heading text-lg text-primary-dark mb-3">
-                    Monstre
-                  </h4>
+                  <h4 className="font-heading text-lg text-primary-dark mb-3">Monstre</h4>
                   <ul className="space-y-2">
                     {data.patterns.map((pattern, i) => (
                       <li key={i} className="flex items-start gap-2">

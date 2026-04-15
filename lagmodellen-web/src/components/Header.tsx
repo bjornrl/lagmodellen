@@ -43,7 +43,12 @@ export default function Header() {
           </nav>
 
           <div className="hidden md:block w-64">
-            <SearchBar searchableContent={searchableContent.map(s => ({ ...s, chapter: String(s.chapter) }))} />
+            <SearchBar
+              searchableContent={searchableContent.map((s) => ({
+                ...s,
+                chapter: String(s.chapter),
+              }))}
+            />
           </div>
 
           <button
@@ -51,7 +56,15 @@ export default function Header() {
             className="lg:hidden p-2 rounded-lg hover:bg-accent/30 transition-colors"
             aria-label="Meny"
           >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-primary-dark">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="text-primary-dark"
+            >
               {mobileOpen ? (
                 <path d="M6 6l12 12M6 18L18 6" />
               ) : (
@@ -69,7 +82,12 @@ export default function Header() {
           <div className="fixed inset-0 bg-black/30" onClick={() => setMobileOpen(false)} />
           <div className="fixed right-0 top-0 bottom-0 w-72 bg-primary-light shadow-xl p-6 pt-20 overflow-y-auto">
             <div className="mb-6 md:hidden">
-              <SearchBar searchableContent={searchableContent.map(s => ({ ...s, chapter: String(s.chapter) }))} />
+              <SearchBar
+                searchableContent={searchableContent.map((s) => ({
+                  ...s,
+                  chapter: String(s.chapter),
+                }))}
+              />
             </div>
             <nav className="flex flex-col gap-2">
               {chapters.map((ch) => (

@@ -24,11 +24,7 @@ export default function SearchBar({ searchableContent }: SearchBarProps) {
     if (q.length < 2) return [];
 
     return searchableContent
-      .filter(
-        (item) =>
-          item.title.toLowerCase().includes(q) ||
-          item.text.toLowerCase().includes(q),
-      )
+      .filter((item) => item.title.toLowerCase().includes(q) || item.text.toLowerCase().includes(q))
       .slice(0, 8);
   }, [query, searchableContent]);
 
@@ -58,9 +54,7 @@ export default function SearchBar({ searchableContent }: SearchBarProps) {
       return (
         <>
           {before}
-          <mark className="bg-accent/50 text-text-dark rounded px-0.5">
-            {match}
-          </mark>
+          <mark className="bg-accent/50 text-text-dark rounded px-0.5">{match}</mark>
           {after}
         </>
       );
@@ -71,10 +65,7 @@ export default function SearchBar({ searchableContent }: SearchBarProps) {
   // Close dropdown on outside click
   useEffect(() => {
     function handleClick(e: MouseEvent) {
-      if (
-        containerRef.current &&
-        !containerRef.current.contains(e.target as Node)
-      ) {
+      if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
         setIsFocused(false);
       }
     }
@@ -96,13 +87,7 @@ export default function SearchBar({ searchableContent }: SearchBarProps) {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <circle
-            cx="9"
-            cy="9"
-            r="6"
-            stroke="currentColor"
-            strokeWidth="1.5"
-          />
+          <circle cx="9" cy="9" r="6" stroke="currentColor" strokeWidth="1.5" />
           <path
             d="M13.5 13.5L17 17"
             stroke="currentColor"
@@ -163,12 +148,8 @@ export default function SearchBar({ searchableContent }: SearchBarProps) {
                     }}
                     className="block p-4 hover:bg-primary-light/50 transition-colors border-b border-accent/10 last:border-b-0"
                   >
-                    <div className="font-body text-xs text-text-dark/50 mb-1">
-                      {item.chapter}
-                    </div>
-                    <div className="font-heading text-sm text-primary-dark mb-1">
-                      {item.title}
-                    </div>
+                    <div className="font-body text-xs text-text-dark/50 mb-1">{item.chapter}</div>
+                    <div className="font-heading text-sm text-primary-dark mb-1">{item.title}</div>
                     <div className="font-body text-xs text-text-dark/60 leading-relaxed">
                       {highlightMatch(item.text)}
                     </div>
