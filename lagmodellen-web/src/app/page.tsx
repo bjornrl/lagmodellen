@@ -22,11 +22,22 @@ export default function Home() {
           className="absolute bottom-0 left-0 w-80 opacity-15 pointer-events-none"
         />
         <img
+          src="/assets/form-2.svg"
+          alt=""
+          className="absolute bottom-0 right-0 w-280 opacity-100 pointer-events-none -z-10"
+        />
+        <img
+          src="/assets/form-3.svg"
+          alt=""
+          className="absolute bottom-0 right-0 w-180 opacity-100 pointer-events-none -z-10"
+        />
+
+        <img
           src="/assets/form-3.svg"
           alt=""
           className="absolute top-1/3 left-1/4 w-64 opacity-10 pointer-events-none"
         />
-        <div className="w-full max-w-[1280px] mx-auto h-fit md:h-screen bg-primary-light p-6 flex flex-col md:flex-row gap-2">
+        <div className="w-full max-w-[1280px] mx-auto h-fit md:h-screen p-6 flex flex-col md:flex-row gap-2">
           <div className="w-full h-full rounded-2xl p-6 flex flex-col justify-between gap-2">
             <div className="flex flex-col w-full h-fit justify-start gap-2 items-start">
               <img
@@ -46,7 +57,9 @@ export default function Home() {
             <h2 className="text-2xl md:text-3xl text-primary-dark/80 font-heading mb-4">
               "Æ har jobba i kommunen i 30 år, og alltid trudd æ jobba tverrfaglig. Men det her e
               første gangen æ oppleve reelt tverrfaglig samarbeid."
-              <span className="text-sm text-text-dark/60 mt-2 block not-italic">— Ansatt</span>
+              <span className="text-sm text-text-dark/60 mt-2 block not-italic">
+                — Ansatt i Trondheim kommune
+              </span>
             </h2>
             <div className="flex flex-row gap-4 w-full h-fit items-end justify-between">
               <div className="flex flex-col items-center justify-center w-full h-fit">
@@ -54,9 +67,9 @@ export default function Home() {
                   Last ned kort presentasjon om Lagmodellen
                 </p>
                 <a
-                  href="/Lagmodellen-presentasjon.pdf"
+                  href="/assets/Lagmodellen_kort.pdf"
                   download
-                  className="bg-primary-dark text-white px-8 py-4 rounded-2xl text-lg font-medium hover:bg-primary-dark/90 transition-colors shadow-lg hover:shadow-xl flex items-center gap-2"
+                  className="bg-secondary-red text-white px-8 py-4 rounded-2xl text-lg font-medium hover:bg-primary-dark/90 transition-colors shadow-lg hover:shadow-xl flex items-center gap-2"
                 >
                   Last ned presentasjon
                 </a>
@@ -65,25 +78,44 @@ export default function Home() {
                 <p className="text-xl text-primary-dark/80 text-center font-bold mb-4">
                   Er du interessert i å høre med om Lagmodellen?
                 </p>
-                <button className="bg-primary-dark text-white px-8 py-4 rounded-2xl text-lg font-medium hover:bg-primary-dark/90 transition-colors shadow-lg hover:shadow-xl">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSe7T5n8jdlY21lfrEns8g-np9KL447JF8ND1jNNDpSKsVAkOA/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-tertiary-mint text-primary-dark px-8 py-4 rounded-2xl text-lg font-medium hover:bg-primary-dark/90 transition-colors shadow-lg hover:shadow-xl flex items-center justify-center"
+                >
                   Ta kontakt
-                </button>
+                </a>
               </div>
             </div>
           </div>
           <div className="w-full h-full bg-tertiary-pink p-6 flex flex-col items-center justify-between gap-2 rounded-2xl">
-            <p className="text-1xl md:text-2xl text-primary-dark/80 text-center font-heading mb-4">
+            <p className="text-3xl md:text-4xl text-primary-dark/80 text-center font-heading mb-4">
               Meld deg på webinar
             </p>
-            <p>oajdnbaoiwdb</p>
-            <img
-              src="/webinar.jpg"
-              alt="Webinar"
-              className="h-full w-auto object-cover rounded-2xl"
-            />
-            <button className="bg-primary-dark text-white px-8 py-4 rounded-2xl text-lg font-medium hover:bg-primary-dark/90 transition-colors shadow-lg hover:shadow-xl">
+            <p className="text-lg text-primary-dark/80 text-center mb-2">
+              Seminaret gir deg en grundig introduksjon til Lagmodellen og hvordan den kan benyttes
+              for å styrke tverrsektorielt samarbeid i offentlig sektor. Du vil få innsikt i
+              sentrale prinsipper, rammeverkets oppbygging og praktiske erfaringer fra
+              implementering i ulike organisasjoner.
+            </p>
+            <p className="text-lg text-primary-dark/80 text-center">
+              Deltakere får anledning til å stille spørsmål og utveksle erfaringer med andre som er
+              nysgjerrige på Lagmodellen. Seminaret passer både for ledere, fagfolk og andre som
+              ønsker å lære mer om hvordan samhandling på tvers kan bidra til bedre tjenester og
+              innovasjon.
+            </p>
+
+            {/* <img src="/webinar.jpg" alt="Webinar" className="object-cover rounded-2xl" /> */}
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdSVIfYZ53zoT1OYeAhVQjyHsIW3143DQnNrQ1f6JoTDwcTgw/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-primary-dark text-white px-8 py-4 rounded-2xl text-lg font-medium hover:bg-primary-dark/90 transition-colors shadow-lg hover:shadow-xl flex items-center justify-center"
+            >
               Meld deg på webinar
-            </button>
+            </a>
+
             <div className="w-full flex flex-row justify-between items-end">
               <img
                 src="/assets/figur-frivillighet.svg"
