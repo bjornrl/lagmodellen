@@ -53,9 +53,13 @@ export default function Home() {
                 <p className="text-xl text-primary-dark/80 text-center font-bold mb-4">
                   Last ned kort presentasjon om Lagmodellen
                 </p>
-                <button className="bg-primary-dark text-white px-8 py-4 rounded-2xl text-lg font-medium hover:bg-primary-dark/90 transition-colors shadow-lg hover:shadow-xl">
-                  Utforsk rammeverket
-                </button>
+                <a
+                  href="/Lagmodellen-presentasjon.pdf"
+                  download
+                  className="bg-primary-dark text-white px-8 py-4 rounded-2xl text-lg font-medium hover:bg-primary-dark/90 transition-colors shadow-lg hover:shadow-xl flex items-center gap-2"
+                >
+                  Last ned presentasjon
+                </a>
               </div>
               <div className="flex flex-col items-center justify-center w-full h-fit">
                 <p className="text-xl text-primary-dark/80 text-center font-bold mb-4">
