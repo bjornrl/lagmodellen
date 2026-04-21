@@ -84,21 +84,19 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full bg-tertiary-pink p-4 sm:p-6 lg:p-8 flex flex-col items-center justify-between gap-4 rounded-2xl">
+          <div className="w-full xl:w-1/3 bg-tertiary-pink p-4 sm:p-6 lg:p-8 flex flex-col items-center justify-between gap-4 rounded-2xl">
             <p className="text-2xl sm:text-3xl lg:text-4xl text-primary-dark/80 text-center font-heading">
               Meld deg på webinar
             </p>
             <p className="text-base sm:text-lg text-primary-dark/80 text-center">
-              Seminaret gir deg en grundig introduksjon til Lagmodellen og hvordan den kan benyttes
-              for å styrke tverrsektorielt samarbeid i offentlig sektor. Du vil få innsikt i
-              sentrale prinsipper, rammeverkets oppbygging og praktiske erfaringer fra
-              implementering i ulike organisasjoner.
+              <strong>Onsdag 27. mai kl. 09:30–10:50</strong>
             </p>
-            <p className="text-base sm:text-lg text-primary-dark/80 text-center">
-              Deltakere får anledning til å stille spørsmål og utveksle erfaringer med andre som er
-              nysgjerrige på Lagmodellen. Seminaret passer både for ledere, fagfolk og andre som
-              ønsker å lære mer om hvordan samhandling på tvers kan bidra til bedre tjenester og
-              innovasjon.
+            <p className="text-base sm:text-lg text-primary-dark/80">
+              Webinaret er første steg for deg som vil lære mer om Lagmodellen og vurdere om det er
+              relevant i din virksomhet. Du får en introduksjon til modellen og hva den er i
+              praksis, erfaringer fra de som har jobbet med den, og et realistisk bilde av hva det
+              krever og hva det kan gi. Påmelding innebærer ingen forpliktelse til videre
+              deltakelse. Du kan melde deg på alene eller sammen med kolleger.
             </p>
 
             {/* <img src="/webinar.jpg" alt="Webinar" className="object-cover rounded-2xl" /> */}
@@ -179,6 +177,28 @@ export default function Home() {
             </cite>
           </Motion.blockquote>
         </div> */}
+      </section>
+
+      <section className="py-10 sm:py-14">
+        <div className="mx-auto w-full max-w-[1280px] px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12 lg:gap-16">
+            <img
+              src="/logos/Trondheim%20kommune%20logo.png"
+              alt="Trondheim kommune"
+              className="h-10 sm:h-12 lg:h-14 w-auto object-contain"
+            />
+            <img
+              src="/logos/Stimulab_svart.png"
+              alt="Stimulab"
+              className="h-10 sm:h-12 lg:h-14 w-auto object-contain"
+            />
+            <img
+              src="/logos/ComteLogo%20Svart.png"
+              alt="Comte"
+              className="h-10 sm:h-12 lg:h-14 w-auto object-contain"
+            />
+          </div>
+        </div>
       </section>
 
       {/* Chapter overview */}
