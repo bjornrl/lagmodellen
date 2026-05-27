@@ -99,7 +99,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="lg:col-span-6 lg:col-start-8 xl:col-span-5 xl:col-start-8 lg:self-center">
+        {/* <div className="display:hidden lg:col-span-6 lg:col-start-8 xl:col-span-5 xl:col-start-8 lg:self-center">
           <div className="rounded-3xl bg-tertiary-pink p-5 text-primary-dark shadow-[0_16px_36px_rgba(10,66,89,0.08)] md:p-6 lg:p-5 2xl:p-8 min-[1920px]:rounded-[2rem] min-[1920px]:p-10 min-[2400px]:rounded-[2.5rem] min-[2400px]:p-14">
             <h2 className="text-[2rem] font-semibold leading-tight md:text-[2.3rem] lg:text-[2.05rem] 2xl:text-[2.4rem] min-[1920px]:text-[2.8rem] min-[2400px]:text-[3.2rem]">
               Meld deg på webinar
@@ -131,14 +131,8 @@ export default function Home() {
             </a>
           </div>
 
-          {/* <div className="mt-3 lg:mt-4 2xl:mt-6">
-            <img
-              src="/assets/stor_figur.png"
-              alt="Illustrasjon av Lagmodellen-figurene"
-              className="h-auto w-full"
-            />
-          </div>*/}
-        </div>
+          
+        </div> */}
       </section>
     </main>
   );
