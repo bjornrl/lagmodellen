@@ -99,40 +99,48 @@ export default function Home() {
           </div>
         </div>
 
-        {/* <div className="display:hidden lg:col-span-6 lg:col-start-8 xl:col-span-5 xl:col-start-8 lg:self-center">
+        <div className="display:hidden lg:col-span-6 lg:col-start-8 xl:col-span-5 xl:col-start-8 lg:self-center">
           <div className="rounded-3xl bg-tertiary-pink p-5 text-primary-dark shadow-[0_16px_36px_rgba(10,66,89,0.08)] md:p-6 lg:p-5 2xl:p-8 min-[1920px]:rounded-[2rem] min-[1920px]:p-10 min-[2400px]:rounded-[2.5rem] min-[2400px]:p-14">
             <h2 className="text-[2rem] font-semibold leading-tight md:text-[2.3rem] lg:text-[2.05rem] 2xl:text-[2.4rem] min-[1920px]:text-[2.8rem] min-[2400px]:text-[3.2rem]">
-              Meld deg på webinar
+              Bli med å utforske Lagmodellen videre!
             </h2>
-            <p className="mt-3 text-[1.02rem] font-semibold lg:text-[0.95rem] 2xl:mt-4 2xl:text-[1.1rem] min-[1920px]:mt-5 min-[1920px]:text-[1.25rem] min-[2400px]:text-[1.4rem]">
-              Onsdag 27. mai kl. 09:30-10:50
+            <p className="mt-3 text-[1.02rem] font-reguler lg:text-[0.95rem] 2xl:mt-4 2xl:text-[1.1rem] min-[1920px]:mt-5 min-[1920px]:text-[1.25rem] min-[2400px]:text-[1.4rem]">
+              Deltok du på webinaret 27. mai og ønsker å være med videre? Meld interesse her.
             </p>
-            <p className="mt-3 text-[1rem] leading-snug lg:text-[0.92rem] 2xl:mt-4 2xl:text-[1.05rem] min-[1920px]:mt-5 min-[1920px]:text-[1.18rem] min-[2400px]:text-[1.35rem]">
-              Webinaret er første steg for deg som vil lære mer om Lagmodellen og vurdere om det er
-              relevant i din virksomhet.
-            </p>
-            <p className="mt-3 text-[1rem] leading-snug lg:text-[0.92rem] 2xl:mt-4 2xl:text-[1.05rem] min-[1920px]:mt-5 min-[1920px]:text-[1.18rem] min-[2400px]:text-[1.35rem]">
-              Du får en introduksjon til modellen og hva den er i praksis, erfaringer fra de som har
-              jobbet med den, og et realistisk bilde av hva det krever og hva det kan gi.
-            </p>
-            <p className="mt-3 text-[1rem] leading-snug lg:text-[0.92rem] 2xl:mt-4 2xl:text-[1.05rem] min-[1920px]:mt-5 min-[1920px]:text-[1.18rem] min-[2400px]:text-[1.35rem]">
-              Påmelding innebærer ingen forpliktelse til videre deltakelse.
-            </p>
-            <p className="mt-3 text-[1rem] leading-snug lg:text-[0.92rem] 2xl:mt-4 2xl:text-[1.05rem] min-[1920px]:mt-5 min-[1920px]:text-[1.18rem] min-[2400px]:text-[1.35rem]">
-              Du kan melde deg på alene eller sammen med kolleger.
-            </p>
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdSVIfYZ53zoT1OYeAhVQjyHsIW3143DQnNrQ1f6JoTDwcTgw/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 inline-flex h-10 items-center justify-center rounded-xl bg-[#1d2c97] px-5 text-[0.92rem] font-medium text-white transition hover:brightness-95 2xl:mt-6 2xl:h-12 2xl:px-6 2xl:text-[1.05rem] min-[1920px]:mt-8 min-[1920px]:h-14 min-[1920px]:rounded-2xl min-[1920px]:px-7 min-[1920px]:text-[1.18rem] min-[2400px]:h-16 min-[2400px]:px-9 min-[2400px]:text-[1.35rem]"
-            >
-              Meld deg på webinar
-            </a>
+            {/* <p className="mt-3 text-[1rem] leading-snug lg:text-[0.92rem] 2xl:mt-4 2xl:text-[1.05rem] min-[1920px]:mt-5 min-[1920px]:text-[1.18rem] min-[2400px]:text-[1.35rem]">
+              Deltok du på webinaret 27. mai og ønsker å være med videre? Meld interesse her.
+            </p> */}
+            <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:mt-5 2xl:mt-7 2xl:gap-4 min-[1920px]:mt-9 min-[1920px]:gap-5 min-[2400px]:mt-12 min-[2400px]:gap-6">
+              <div>
+                <p className="mb-2 text-center text-[0.85rem] leading-tight text-primary-dark/85 2xl:text-[1rem] min-[1920px]:mb-3 min-[1920px]:text-[1.1rem] min-[2400px]:text-[1.25rem]">
+                  Trykk på lenken for å melde interesse for å bli med videre!
+                </p>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfFFcIzAggK4_ds3WNZ3P6o6rhLee2v_gomyyY-CYpuBwpavw/viewform"
+                  className="flex h-10 w-full items-center justify-center rounded-xl bg-[#B2D5BE] px-4 text-[0.95rem] font-medium text-primary-dark shadow-sm transition hover:brightness-95 2xl:h-12 2xl:text-[1.05rem] min-[1920px]:h-14 min-[1920px]:rounded-2xl min-[1920px]:text-[1.15rem] min-[2400px]:h-16 min-[2400px]:text-[1.3rem]"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Lenke for påmelding
+                </a>
+              </div>
+              <div>
+                <p className="mb-2 text-center text-[0.85rem] leading-tight text-primary-dark/85 2xl:text-[1rem] min-[1920px]:mb-3 min-[1920px]:text-[1.1rem] min-[2400px]:text-[1.25rem]">
+                  Ønsker å se presentasjonen fra webinaret?
+                </p>
+                <a
+                  href="/assets/Webinar Lagmodellen 270526.pdf"
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-10 w-full items-center justify-center rounded-xl bg-[#FFF1CE] px-4 text-[0.95rem] font-medium text-primary-dark shadow-sm transition hover:brightness-95 2xl:h-12 2xl:text-[1.05rem] min-[1920px]:h-14 min-[1920px]:rounded-2xl min-[1920px]:text-[1.15rem] min-[2400px]:h-16 min-[2400px]:text-[1.3rem]"
+                >
+                  Webinar-presentasjon
+                </a>
+              </div>
+            </div>
           </div>
-
-          
-        </div> */}
+        </div>
       </section>
     </main>
   );
