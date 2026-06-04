@@ -65,7 +65,7 @@ export default function Home() {
               <p className="mb-2 text-center text-[0.85rem] leading-tight text-primary-dark/85 2xl:text-[1rem] min-[1920px]:mb-3 min-[1920px]:text-[1.1rem] min-[2400px]:text-[1.25rem]">
                 Er du interessert i å høre
                 <br />
-                med om Lagmodellen?
+                mer om Lagmodellen?
               </p>
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSe7T5n8jdlY21lfrEns8g-np9KL447JF8ND1jNNDpSKsVAkOA/viewform"
