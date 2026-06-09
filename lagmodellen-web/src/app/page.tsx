@@ -121,7 +121,7 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Lenke for påmelding
+                  Meld interesse
                 </a>
               </div>
               <div>
